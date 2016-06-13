@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Objects</title>
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1 user-scalable=no maximum-scale=1">
+    <style type="text/css">
+    	body{
+    		background-image: url("../images/Sunset.jpg");
+    	}
+    </style>
+    
+</head>
+<body>
+<p class="clearfix"></p>
+	<div class="col-sm-offset-4 col-sm-4">
+		<table class="table table-stripped table-responsive table-bordered">
+			<thead>
+				<tr>
+					<th>Username</th>
+					<th>Address</th>
+					<th>Mobile</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td id="td1"></td>
+					<td id="td2"></td>
+					<td id="td3"></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<script type="text/javascript">
+		var myObj = {name:'Rathish', address:'USA', mobile: 2192999341};
+		document.getElementById('td1').innerHTML = myObj.name;
+		document.getElementById('td2').innerHTML = myObj.address;
+		document.getElementById('td3').innerHTML = myObj.mobile;
+	</script>
+</body>
+</html>

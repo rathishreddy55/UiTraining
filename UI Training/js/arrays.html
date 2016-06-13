@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Arrays</title>
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1 user-scalable=no maximum-scale=1">
+    <style type="text/css">
+    	body{
+    		background-image: url("../images/Sunset.jpg");
+    	}
+    </style>
+    
+</head>
+<body>
+<p class="clearfix"></p>
+	<div class="col-sm-offset-4 col-sm-4">
+		<table class="table table-stripped table-responsive table-bordered">
+			<thead>
+				<tr>
+					<th>Username</th>
+					<th>Address</th>
+					<th>Mobile</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td id="td1"></td>
+					<td id="td2"></td>
+					<td id="td3"></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<script type="text/javascript">
+		//var myArray = [];
+		//var myArray1 = newarray();
+		var myArray2 = [1,2,3,4];
+		var myArray3 = ['rathish','raj','rakesh',];
+		var myArray4 = [1,'rathish',21.23,'rakesh'];
+		var myArray5 = [{name:'Rathish', address:'USA', mobile: 2192999341},{name:'Rakesh', address:'USA', mobile: 5745168233}];
+		//alert(myArray3[1]);
+		//alert(myArray5[0].name);
+		document.getElementById('td1').innerHTML = myArray5[0].name;
+		document.getElementById('td2').innerHTML = myArray5[0].address;
+		document.getElementById('td3').innerHTML = myArray5[0].mobile;
+	</script>
+</body>
+</html>
